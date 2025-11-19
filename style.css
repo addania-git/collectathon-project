@@ -1,0 +1,168 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 100vh;
+    display: flex;
+    z-index: 0;
+}
+
+.game-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    color: #FFD700;
+    text-shadow: 3px 3px #000;
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    z-index: 300;
+}
+
+.game-title {
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FF4500;
+}
+
+.message {
+    position: absolute;
+    z-index: 10;
+    top: 55%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.jump-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.instruction-text {
+    font-family: Helvetica; 
+    font-size: 1.2em; 
+    color: #FFD700; 
+    text-shadow: 1px 1px 3px #000; 
+    margin-bottom: 15px;
+}
+
+.start-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+    color: #000;
+    border: 3px solid #FFD700;
+    padding: 10px 20px;
+    display: inline-block;
+    background: white;
+    border-radius: 8px;
+}
+
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.bg1 {
+    background-image: url('background-img.jpg');
+}
+.bg2 {
+    background-image: url('background-img.jpg');
+    transform: scaleX(-1); 
+}
+
+.bird {
+	height: 100px;
+	width: 130px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+    background: linear-gradient(#8B4513, #A0522D); 
+    border: 3px solid #5C3317; 
+    border-radius: 10px; 
+
+}
+
+.diamond {
+    z-index: 10;
+}
+
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.score_val {
+	color: gold;
+	font-weight: bold;
+}
+
+.game-over-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    color: #FF0000; 
+    text-shadow: 3px 3px #000, 0 0 10px #FF4500;
+    margin-bottom: 20px;
+}
+
+.score-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8em;
+    color: #FFD700; 
+    text-shadow: 2px 2px #000;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.diamond-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1080px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.bird{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
