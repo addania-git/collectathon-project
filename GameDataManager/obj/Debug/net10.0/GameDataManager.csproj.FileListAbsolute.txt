@@ -1,0 +1,15 @@
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\bin\Debug\net10.0\GameDataManager.exe
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\bin\Debug\net10.0\GameDataManager.deps.json
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\bin\Debug\net10.0\GameDataManager.runtimeconfig.json
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\bin\Debug\net10.0\GameDataManager.dll
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\bin\Debug\net10.0\GameDataManager.pdb
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.AssemblyInfoInputs.cache
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.AssemblyInfo.cs
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.csproj.CoreCompileInputs.cache
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.sourcelink.json
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.dll
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\refint\GameDataManager.dll
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.pdb
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\GameDataManager.genruntimeconfig.cache
+C:\Users\1012vo1\Downloads\collectathon-project-main\GameDataManager\obj\Debug\net10.0\ref\GameDataManager.dll
