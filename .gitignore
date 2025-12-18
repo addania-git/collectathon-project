@@ -1,0 +1,16 @@
+# .NET build artifacts#
+bin/
+obj/
+*.db
+*.sqlite
+
+# EF Core migrations (optional)
+# Migrations/
+
+# VS/VSCode settings
+.vscode/
+*.user
+*.suo
+
+# Logs
+*.log
