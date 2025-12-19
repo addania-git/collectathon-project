@@ -30,21 +30,22 @@
 1. Open `src/index.html` in your browser.
 2. Controls: **Space/Arrow Up** to jump, **Enter** to start/restart, **Escape** to close modals.
 
----
 
 ### Backend (API)
 1. Open a terminal in the **GameApi/** folder:
   ```bash
   cd GameApi
   dotnet restore
+  ```
 
 2. Create or update database:
+  ```bash
   dotnet tool update -g dotnet-ef
   dotnet ef migrations add InitLean
   dotnet ef database update
+  ```
 
 3. Run the API:
-
+  ```bash
   dotnet run
-
----
+  ```
