@@ -4,7 +4,6 @@ using System;
 
 namespace GameApi.Validators
 {
-    // Validate the name-only create DTO
     public class CreateRunScoreNameValidator : AbstractValidator<CreateRunScoreNameDto>
     {
         public CreateRunScoreNameValidator()
@@ -24,7 +23,4 @@ namespace GameApi.Validators
                 .GreaterThan(0);
         }
     }
-
-    // Remove the UpdateRunScoreValidator (no update endpoint)
-    // public class UpdateRunScoreValidator : Abstract    // public class UpdateRunScoreValidator : AbstractValidator<UpdateRunScoreDto> { ... }
 }
