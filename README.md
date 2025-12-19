@@ -1,7 +1,5 @@
 # Flappy Bird Game 
 
-Built using: **HTML5 Canvas**, **JavaScript**, and **CSS**.
-
 ---
 
 ## 🎮 How to Play
@@ -12,26 +10,41 @@ Built using: **HTML5 Canvas**, **JavaScript**, and **CSS**.
   - Pass through pipes → **+1 point**
   - Collect diamonds → **+5 points**
 - **Game Over**:
-  - If the bird hits a pipe or the ground/top of the screen.
+  - When you crash → **Game Over** → press **Enter** to restart
+- **Leaderboard**: 
+  -Top 5 (best score per player name), backed by API or local fallback
 
 ---
 
-## ⚙️ Setup Instructions
-1. Clone or download this repository.
-2. Ensure the following files are in the same folder:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-   - Images:
-     - `Bird.png`
-     - `Bird-2.png` (flap animation)
-     - `background-img.jpg`
-     - `diamond.png`
-3. Open `index.html` in browser.
+## 🧱 Tech Stack
+
+- **Frontend:** HTML5, CSS, JavaScript (Canvas API)
+- **Backend:** ASP.NET Core Web API (C#), EF Core, SQLite
+- **Version Control:** Git
 
 ---
 
-## 🛠️ Technologies Used
-- **HTML5 Canvas** for rendering graphics
-- **JavaScript** for game logic
-- **CSS** for styling and fonts
+## ⚙️ How to Run
+
+### Frontend (Dev)
+1. Open `src/index.html` in your browser.
+2. Controls: **Space/Arrow Up** to jump, **Enter** to start/restart, **Escape** to close modals.
+
+---
+
+### Backend (API)
+1. Open a terminal in the **GameApi/** folder:
+  ```bash
+  cd GameApi
+  dotnet restore
+
+2. Create or update database:
+  dotnet tool update -g dotnet-ef
+  dotnet ef migrations add InitLean
+  dotnet ef database update
+
+3. Run the API:
+
+  dotnet run
+
+---

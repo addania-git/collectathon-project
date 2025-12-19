@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="images/favicon.ico"/>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/png" href="images/favicon.ico" />
         <title>Flappy Bird Game</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+        
         <script src="script.js" defer></script>
     </head>
     
     <body>
         <div class="background">
-            <div class = "bg-img bg1"></div>
-            <div class = "bg-img bg2"></div>
-    </div>
-    
-    <div class="intro-container">
-        <h1 class="game-title">Welcome to Flappy Bird!</h1>
-        <img src="Bird.png" alt="bird-img" class="bird" id="bird-1">
-        
-        <div class="message">
-            <p class="jump-text">Press Up key or Space to fly</p>
-            <p class="instruction-text">Avoid pipes and collect <img src="diamond.png" class="diamond-icon"> for +5 points</p>
-            <p class="start-text">Press Enter to Start</p>
-            <button id="btnLeaderboard" class="leaderboard-btn">View Leaderboard</button>
+            <div class="bg-img bg1"></div>
+            <div class="bg-img bg2"></div>
         </div>
         
-        <div class="score">
-            <span class="score_title"></span>
-            <span class="score_val"></span>
-        </div>
+        <header class="auth-bar">
+            <div id="authStatus"></div>
+        </header>
         
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
-        <div id="leaderboardModal" class="modal hidden">
-            <div class="modal-content">
-                <h2>Top 5 Leaderboard</h2>
-                <ol id="leaderboardList"></ol>
-                <div class="modal-actions">
-                    <button id="closeLeaderboard" class="close-btn">Close</button>
-                    <button id="resetLeaderboard" class="danger-btn">Reset Leaderboard</button>
+        <section id="nameView" class="auth-view">
+            <div class="auth-stack">
+                <h1 class="game-title">Welcome to Flappy Bird!</h1>
+                
+                <div class="auth-card">
+                    <h2 class="auth-title">Your name</h2>
+                    <form id="nameForm" class="auth-form">
+                        <label>Enter your name<br/>
+                            <input id="playerName" type="text" required autocomplete="name" placeholder="e.g. Alice"/>
+                        </label>
+                        <button type="submit" class="start-btn">Start</button>
+                        <p id="nameError" class="modal-note" style="color:#b00020; display:none;"></p>
+                    </form>
                 </div>
-                <p class="modal-note">Scores are stored locally in your browser.</p>
             </div>
-        </body>
-    </html>
+        </section>
+        
+        <!-- ===== MAIN PAGE (after login) ===== -->
+         <section id="gameView" class="game-view hidden">
+            <div class="intro-container">
+                <h1 class="game-title">Welcome to Flappy Bird!</h1>
+                
+                <!-- Bird is hidden until play starts -->
+                 <img src="src/images/Bird.png" alt="bird-img" class="bird" id="bird-1" />
+                 
+                 <div class="message">
+                    <p class="jump-text">Press Up key or Space to fly</p>
+                    <p class="instruction-text">Avoid pipes and collect <img src="images/diamond.png" class="diamond-icon" /> for +5 points</p>
+                    <p class="start-text">Press Enter to Start</p>
+                    <button id="btnLeaderboard" class="leaderboard-btn">View Leaderboard</button>
+                </div>
+                
+                <div class="score">
+                    <span class="score_title"></span>
+                    <span class="score_val"></span>
+                </div>
+                
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+                
+                <!-- Leaderboard modal -->
+                 <div id="leaderboardModal" class="modal hidden">
+                    <div class="modal-content">
+                        <h2>Top 5 Leaderboard</h2>
+                        <ol id="leaderboardList"></ol>
+                        <div class="modal-actions">
+                            <button id="closeLeaderboard" class="close-btn">Close</button>
+                            <button id="resetLeaderboard" class="danger-btn">Reset Leaderboard</button>
+                        </div>
+                        <p class="modal-note">Leaderboard shows the best score per player name (Top 5).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

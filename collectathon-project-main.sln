@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameApi", "GameApi\GameApi.csproj", "{A2D3333A-13A8-FAAD-1662-CD005370980F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDataManager", "GameDataManager\GameDataManager.csproj", "{46C5B32C-15F3-6313-CFDB-6E995C1F9BC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2D3333A-13A8-FAAD-1662-CD005370980F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D3333A-13A8-FAAD-1662-CD005370980F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D3333A-13A8-FAAD-1662-CD005370980F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D3333A-13A8-FAAD-1662-CD005370980F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C5B32C-15F3-6313-CFDB-6E995C1F9BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C5B32C-15F3-6313-CFDB-6E995C1F9BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C5B32C-15F3-6313-CFDB-6E995C1F9BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C5B32C-15F3-6313-CFDB-6E995C1F9BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C75D181-1C60-4C44-AF9A-0B05ECD24C8C}
+	EndGlobalSection
+EndGlobal
